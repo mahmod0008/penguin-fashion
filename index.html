@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>penguin fashion website</title>
+    <!-- tailwind link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind custom color  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        hc:'#FA804C',
+                        hc2:'#363958',
+                        phc:'#3E3E3E',
+                        hbg:'#FFF9F4',
+                        bbg:'#3D4FF3',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
 <body>
-    
+    <header class="bg-hbg">
+        <nav class="md:flex items-end justify-between" > 
+            <div>
+                <img class="w-56 h-8 ml-10" src="images/Logo.png" alt="">
+            </div>
+            <div>
+                <ul class="flex gap-14 mr-14">
+                    <li><a href=""></a>Home</li>
+                    <li><a href=""></a>Product</li>
+                    <li><a href=""></a>About us</li>
+                    <li><a href=""></a>Contact us</li>
+                </ul>
+            </div>
+        </nav>
+        <section class="sm:flex items-center p-10 ">
+            <div class="mb-12">
+                <img class="w-8/12 " src="images/Group 33092.png" alt="">
+            </div>
+            <div class="uppercase mr-8">
+                <span class="text-hc text-7xl">Nike reac</span>
+                <span class="text-hc2 text-7xl">infinity run 2</span>
+                <p class="text-base text-phc mt-2">Lorem Ipsum is simply dummy text of the printing
+                and typesetting industry.</p>
+                <button class="flex items-center bg-bbg uppercase rounded-lg py-4 px-7 mt-6">
+                    <img class="w-6 h-6 mr-1" src="images/shopping-cart 1.png" alt="">
+                    by now
+                </button>
+            </div>
+        </section>
+    </header>
 </body>
 </html>
